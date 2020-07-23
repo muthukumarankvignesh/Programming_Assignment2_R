@@ -32,3 +32,9 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m)
   m
 }
+
+x <- matrix(1:4, ncol = 2, nrow =2)
+solve(x)
+
+M <- makeCacheMatrix(x)
+cacheSolve(M)
